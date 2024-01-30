@@ -1,0 +1,189 @@
+/* external style sheet */
+/* image responsive */
+
+/* all border box sizing is border box */
+* {
+    box-sizing: border-box;
+}
+/* body margin none */
+body {
+    margin: 0;
+    margin-bottom: 0px !important;
+}
+/* header background image */
+header {
+    background-image: url("images/main-bg1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* class="header1" in html */
+.header1 {
+    /* padding: 150px 0; */
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+/* section or area of the article and nav */
+section {
+    background-color: lightblue;
+}
+/* class="section1" in html */
+.section1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* where you can find the menu */
+.nav1 {
+    float: left;
+    width: 15%;
+}
+
+/* where you can find the main content of the page */
+.article1 {
+    float: left;
+    width: 85%;
+    background-color: lightgray;
+
+    /* padding: 100px 5%;
+    margin: 0 100px; */
+}
+
+/* this content is beyond the class room */
+.content {
+    padding: 0 6px;
+}
+
+/* all gallery divider have border color 1px */
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+/* gallery hover is when you move the mouse in to the picture */
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+/* this gallery is for the image size */
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+/* this desc is for the description of html */
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/* responsive div float left */
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24%;
+}
+
+.item-left {
+    float: left;
+    width: 50%;
+    color: white;
+}
+.item-right {
+    float: left;
+    width: 50%;
+    color: white;
+}
+
+/* when screen is smaller up to 900 px */
+@media only screen and (max-width: 900px) {
+    .nav1 {
+        width: 100%;
+    }
+    .article1 {
+        width: 100%;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        text-align: center; /* Center the menu */
+    }
+
+    .menu li {
+        display: inline-block;
+        margin-right: 10px; /* Adjust the spacing between menu items */
+        padding: 10px 0;
+    }
+
+    .menu li a {
+        text-decoration: none;
+    }
+}
+
+/* when screen is smaller up to 800 px */
+@media only screen and (max-width: 800px) {
+    .responsive {
+        width: 49%;
+        margin: 6px 0;
+    }
+    .nav1 {
+        width: 100%;
+    }
+    .article1 {
+        width: 100%;
+    }
+    .item-left {
+        width: 100%;
+    }
+    .item-right {
+        width: 100%;
+    }
+}
+/* when screen is smaller up to 500 px */
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+/* after respnsive will clear both */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* .spacer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+} */
+
+footer {
+    background-image: url("images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+
+/* list type square*/
+/* ul {
+    list-style: square;
+} */
+
+/* list type none*/
+ul {
+    list-style: none;
+}
+/* https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm */
