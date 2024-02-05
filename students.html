@@ -25,7 +25,6 @@
                     <li>😀 <a href="friends.html">Friends</a></li>
                     <li>🤩 <a href="students.html">Students</a></li>
                 </ul>
-
             </nav>
 
             <article class="article1">
@@ -37,60 +36,134 @@
                 <div class="clearfix">
                     <div class="responsive">
                         <div class="gallery">
-                            <a target="_blank" href="https://tomwebbasic.tiiny.site/">
+                            <a
+                                target="_blank"
+                                href="https://tomwebbasic.tiiny.site/"
+                            >
                                 <img
-                                src="images/tom.jpg"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
-                                <div class="desc">
-                                    Tom
-                                </div>
+                                    src="images/tom.jpg"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
+                                <div class="desc">Tom</div>
                             </a>
-                        </div>
-                    </div>
-
-                    <div class="responsive">
-                        <div class="gallery">
-                            <a target="_blank" href="https://junwebbasic.tiiny.site/">
-                            <img
-                                src="images/yujun.jpg"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
-                            <div class="desc">Jun</div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="responsive">
-                        <div class="gallery">
-                            <a target="_blank" href="https://minwebbasic.tiiny.site/">
-                            <img
-                                src="images/yumin.jpg"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
+                            <p>
+                                January 10th is my first cooding class with
+                                teacher Gary. We learned about html and
+                                <span id="dots-tom">...</span
+                                ><span id="more-tom" style="display: none">
+                                    css. We learned about html January 10th ~
+                                    Jan 19th. We learned about css january 22th
+                                    ~ Feburary 5th. So now, we can make webpage.
+                                    We made about me, about friends and about
+                                    family.We recieved waterbottle and cookies
+                                    from teacher Gary. We learned about cooding
+                                    47hours 30minutes. It was very good time to
+                                    me. I want to learn cooding again.</span
+                                >
+                            </p>
                             <div class="desc">
-                                Min
+                                <button
+                                    onclick="toggleReadMore('myBtn-tom', 'dots-tom', 'more-tom')"
+                                    id="myBtn-tom"
+                                >
+                                    Read more
+                                </button>
                             </div>
-                            </a>
                         </div>
                     </div>
 
                     <div class="responsive">
                         <div class="gallery">
-                            <a target="_blank" href="https://www.keystonesubic.com/en/inquiry/">
-                            <img
-                                src="images/silhouette.png"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
-                            <div class="desc">Join Us</div>
+                            <a
+                                target="_blank"
+                                href="https://junwebbasic.tiiny.site/"
+                            >
+                                <img
+                                    src="images/yujun.jpg"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
+                                <div class="desc">Jun</div>
+                            </a>
+                            <p>
+                                Week 1:I came here for the first time to take a
+                                coding class. Week 2:I studied html and
+                                <span id="dots-jun">...</span
+                                ><span id="more-jun" style="display: none">
+                                    I finished the html. Week 3:I studied the
+                                    css and finished the CSS. Week 4:I studied
+                                    the basic javascrip and finished this
+                                    website.</span
+                                >
+                            </p>
+                            <div class="desc">
+                                <button
+                                    onclick="toggleReadMore('myBtn-jun', 'dots-jun', 'more-jun')"
+                                    id="myBtn-jun"
+                                >
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <a
+                                target="_blank"
+                                href="https://minwebbasic.tiiny.site/"
+                            >
+                                <img
+                                    src="images/yumin.jpg"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
+                                <div class="desc">Min</div>
+                            </a>
+                            <p>
+                                I learned about basic of coding and Web. My
+                                teacher is good so, I can get many
+                                <span id="dots-min">...</span
+                                ><span id="more-min" style="display: none"
+                                    >informations about coding. Then I learned
+                                    about HTML. It is most basic about coding.
+                                    so, It wasn't easy But my teacher help me.
+                                    So, I learned about it. After I learned
+                                    about it. I learned about CSS. It is about
+                                    color and video. It was soso. Also, I
+                                    learned about Tiiny check system. It was
+                                    good system. Inconclusion, I want to learn
+                                    more about coding.</span
+                                >
+                            </p>
+                            <div class="desc">
+                                <button
+                                    onclick="toggleReadMore('myBtn-min', 'dots-min', 'more-min')"
+                                    id="myBtn-min"
+                                >
+                                    Read more
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <a
+                                target="_blank"
+                                href="https://www.keystonesubic.com/en/inquiry/"
+                            >
+                                <img
+                                    src="images/silhouette.png"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
+                                <div class="desc">Join Us</div>
                             </a>
                         </div>
                     </div>
@@ -103,13 +176,29 @@
             <div class="item-left">
                 <!--this is your nav -->
                 <p>Quick Links</p>
+
                 <ul>
-                    <ul>
-                        <li>😎 <a href="index.html" style="color: #11ECDF">About Me</a></li>
-                        <li>😍 <a href="family.html" style="color: #11ECDF">Family</a></li>
-                        <li>😀 <a href="friends.html" style="color: #11ECDF">Friends</a></li>
-                        <li>🤩 <a href="students.html" style="color: #11ECDF">Students</a></li>
-                    </ul>
+                    <li>
+                        😎
+                        <a href="index.html" style="color: #11ecdf">About Me</a>
+                    </li>
+                    <li>
+                        😍
+                        <a href="family.html" style="color: #11ecdf">Family</a>
+                    </li>
+                    <li>
+                        😀
+                        <a href="friends.html" style="color: #11ecdf"
+                            >Friends</a
+                        >
+                    </li>
+                    <li>
+                        🤩
+                        <a href="students.html" style="color: #11ecdf"
+                            >Students</a
+                        >
+                    </li>
+                </ul>
             </div>
 
             <div class="item-right">
@@ -117,22 +206,50 @@
                 <p>Contact</p>
                 <ul>
                     <!-- Adress -->
-                    <li>📌 <a href="#" style="color: #11ECDF">Subic Bay Philippines</a></li>
+                    <li>
+                        📌
+                        <a href="#" style="color: #11ecdf"
+                            >Subic Bay Philippines</a
+                        >
+                    </li>
                     <!-- my email -->
-                    <li>📧 <a href="#" style="color: #11ECDF">gary@keystonesubic.com</a></li>
+                    <li>
+                        📧
+                        <a href="#" style="color: #11ecdf"
+                            >gary@keystonesubic.com</a
+                        >
+                    </li>
                     <!-- phone number -->
-                    <li>&#x1F4DE; <a href="#" style="color: #11ECDF">0919-123-4567</a></li>
+                    <li>
+                        &#x1F4DE;
+                        <a href="#" style="color: #11ecdf">0919-123-4567</a>
+                    </li>
                 </ul>
             </div>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
 
 <script>
-window.onload = function() {
-    var bodyElement = document.body;
-    if (bodyElement) {
-        bodyElement.style.marginBottom = '0px !important';
-    }
-};
+    document.addEventListener("keydown", function (e) {
+        // Disable F12 key
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+            e.preventDefault();
+        }
+    });
+
+    // Disable right-click context menu
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<script>
+    window.onload = function () {
+        var bodyElement = document.body;
+        if (bodyElement) {
+            bodyElement.style.marginBottom = "0px !important";
+        }
+    };
 </script>

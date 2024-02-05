@@ -187,3 +187,32 @@ ul {
     list-style: none;
 }
 /* https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm */
+
+/* video code */
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.center {
+    width: 50%;
+    margin: auto;
+}
+
+/* button code */
+#more {
+    display: none;
+}

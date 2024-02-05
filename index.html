@@ -25,7 +25,6 @@
                     <li>😀 <a href="friends.html">Friends</a></li>
                     <li>🤩 <a href="students.html">Students</a></li>
                 </ul>
-
             </nav>
 
             <article class="article1">
@@ -48,110 +47,164 @@
                         and hands-on coding to ensure that his students truly
                         grasp the essence of web development.
                     </p>
-                    <p>And my Awesome students are: 🤩 <a href="students.html">Click ME</a>
+                    <p>
+                        And my Awesome students are: 🤩
+                        <a href="students.html">Click ME</a>
+                    </p>
                 </div>
+
                 <!-- this image will be my picture -->
                 <div class="clearfix">
                     <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="images/html.jpg">
                                 <img
-                                src="images/html.jpg"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
+                                    src="images/html.jpg"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
                                 <div class="desc">
                                     HTML: Building the Foundation
                                 </div>
                             </a>
                             <p>
                                 Gary starts with the basics—HTML. He emphasizes
-                                the importance of a strong foundation, comparing
-                                HTML to the skeleton of a web page. Through
-                                Gary's guidance, students learn how to structure
-                                content, create links, and use semantic elements
-                                for better accessibility. By the end of the HTML
-                                module, his students are already building the
-                                skeletal structure of functional web pages.
+                                the importance of a strong<span id="dots-html"
+                                    >...</span
+                                ><span id="more-html" style="display: none">
+                                    foundation, comparing HTML to the skeleton
+                                    of a web page. Through Gary's guidance,
+                                    students learn how to structure content,
+                                    create links, and use semantic elements for
+                                    better accessibility. By the end of the HTML
+                                    module, his students are already building
+                                    the skeletal structure of functional web
+                                    pages.</span
+                                >
                             </p>
+                            <div class="desc">
+                                <button
+                                    onclick="toggleReadMore('myBtn-html', 'dots-html', 'more-html')"
+                                    id="myBtn-html"
+                                >
+                                    Read more
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="images/css.jpg">
-                            <img
-                                src="images/css.jpg"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
-                            <div class="desc">CSS: Styling with Flair</div>
+                                <img
+                                    src="images/css.jpg"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
+                                <div class="desc">CSS: Styling with Flair</div>
                             </a>
                             <p>
                                 Next up, Gary introduces the magic wand of web
-                                design—CSS. With a touch of creativity, Gary
-                                shows his students how to bring their web pages
-                                to life. From styling fonts and colors to
-                                understanding layout principles, he ensures that
-                                his students not only make visually appealing
-                                websites but also write clean and efficient CSS
-                                code.
+                                design—CSS. With a touch of<span id="dots-css"
+                                    >...</span
+                                ><span id="more-css" style="display: none">
+                                    creativity, Gary shows his students how to
+                                    bring their web pages to life. From styling
+                                    fonts and colors to understanding layout
+                                    principles, he ensures that his students not
+                                    only make visually appealing websites but
+                                    also write clean and efficient CSS
+                                    code.</span
+                                >
                             </p>
+                            <div class="desc">
+                                <button
+                                    onclick="toggleReadMore('myBtn-css', 'dots-css', 'more-css')"
+                                    id="myBtn-css"
+                                >
+                                    Read more
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="images/javascript.jpg">
-                            <img
-                                src="images/javascript.jpg"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
-                            <div class="desc">
-                                JavaScript: Adding Interactivity
-                            </div>
+                                <img
+                                    src="images/javascript.jpg"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
+                                <div class="desc">
+                                    JavaScript: Adding Interactivity
+                                </div>
                             </a>
                             <p>
                                 In the world of Gary, JavaScript isn't just a
-                                programming language; it's the wizardry that
-                                makes your websites interactive. Gary takes his
-                                students on a journey of coding adventures,
-                                teaching them how to manipulate the Document
-                                Object Model (DOM), handle events, and create
-                                dynamic content. By the time they finish the
-                                JavaScript module, Gary's students are weaving
-                                spells of interactivity into their web
-                                creations.
+                                programming language; it's the wizardry<span
+                                    id="dots-js"
+                                    >...</span
+                                ><span id="more-js" style="display: none">
+                                    that makes your websites interactive. Gary
+                                    takes his students on a journey of coding
+                                    adventures, teaching them how to manipulate
+                                    the Document Object Model (DOM), handle
+                                    events, and create dynamic content. By the
+                                    time they finish the JavaScript module,
+                                    Gary's students are weaving spells of
+                                    interactivity into their web creations.
+                                </span>
                             </p>
+                            <div class="desc">
+                                <button
+                                    onclick="toggleReadMore('myBtn-js', 'dots-js', 'more-js')"
+                                    id="myBtn-js"
+                                >
+                                    Read more
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     <div class="responsive">
                         <div class="gallery">
                             <a target="_blank" href="images/Special Touch.jpg">
-                            <img
-                                src="images/Special Touch.jpg"
-                                width="600px"
-                                height="400px"
-                                object-fit="cover"
-                            />
-                            <div class="desc">Gary's Special Touch</div>
+                                <img
+                                    src="images/Special Touch.jpg"
+                                    width="600px"
+                                    height="400px"
+                                    object-fit="cover"
+                                />
+                                <div class="desc">Gary's Special Touch</div>
                             </a>
                             <p>
                                 What sets Gary apart is his commitment to
-                                real-world applications. He sprinkles practical
-                                examples and coding challenges throughout his
-                                courses, ensuring that his students don't just
-                                learn theory but can apply their knowledge to
-                                solve problems. Whether it's building a
-                                portfolio website, a responsive design, or a
-                                small interactive game, Gary's students graduate
-                                with hands-on experience.
+                                real-world applications. He sprinkles<span
+                                    id="dots-st"
+                                    >...</span
+                                ><span id="more-st" style="display: none">
+                                    practical examples and coding challenges
+                                    throughout his courses, ensuring that his
+                                    students don't just learn theory but can
+                                    apply their knowledge to solve problems.
+                                    Whether it's building a portfolio website, a
+                                    responsive design, or a small interactive
+                                    game, Gary's students graduate with hands-on
+                                    experience.</span
+                                >
                             </p>
+                            <div class="desc">
+                                <button
+                                    onclick="toggleReadMore('myBtn-st', 'dots-st', 'more-st')"
+                                    id="myBtn-st"
+                                >
+                                    Read more
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,6 +228,22 @@
                         and JavaScript!
                     </p>
                 </div>
+                <div class="content">
+                    <div>
+                        <h2>My Favorite Video</h2>
+                    </div>
+                    <div class="center">
+                        <div class="container">
+                            <iframe
+                                class="responsive-iframe"
+                                src="https://www.youtube.com/embed/clvr7hZnyaI"
+                            ></iframe>
+                        </div>
+                        <div>
+                            <p>Gary doesn't stop teaching.</p>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
 
@@ -184,12 +253,27 @@
                 <!--this is your nav -->
                 <p>Quick Links</p>
                 <ul>
-                    <ul>
-                        <li>😎 <a href="index.html" style="color: #11ECDF">About Me</a></li>
-                        <li>😍 <a href="family.html" style="color: #11ECDF">Family</a></li>
-                        <li>😀 <a href="friends.html" style="color: #11ECDF">Friends</a></li>
-                        <li>🤩 <a href="students.html" style="color: #11ECDF">Students</a></li>
-                    </ul>
+                    <li>
+                        😎
+                        <a href="index.html" style="color: #11ecdf">About Me</a>
+                    </li>
+                    <li>
+                        😍
+                        <a href="family.html" style="color: #11ecdf">Family</a>
+                    </li>
+                    <li>
+                        😀
+                        <a href="friends.html" style="color: #11ecdf"
+                            >Friends</a
+                        >
+                    </li>
+                    <li>
+                        🤩
+                        <a href="students.html" style="color: #11ecdf"
+                            >Students</a
+                        >
+                    </li>
+                </ul>
             </div>
 
             <div class="item-right">
@@ -197,22 +281,50 @@
                 <p>Contact</p>
                 <ul>
                     <!-- Adress -->
-                    <li>📌 <a href="#" style="color: #11ECDF">Subic Bay Philippines</a></li>
+                    <li>
+                        📌
+                        <a href="#" style="color: #11ecdf"
+                            >Subic Bay Philippines</a
+                        >
+                    </li>
                     <!-- my email -->
-                    <li>📧 <a href="#" style="color: #11ECDF">gary@keystonesubic.com</a></li>
+                    <li>
+                        📧
+                        <a href="#" style="color: #11ecdf"
+                            >gary@keystonesubic.com</a
+                        >
+                    </li>
                     <!-- phone number -->
-                    <li>&#x1F4DE; <a href="#" style="color: #11ECDF">0919-123-4567</a></li>
+                    <li>
+                        &#x1F4DE;
+                        <a href="#" style="color: #11ecdf">0919-123-4567</a>
+                    </li>
                 </ul>
             </div>
         </footer>
+        <script src="main.js"></script>
     </body>
 </html>
 
 <script>
-window.onload = function() {
-    var bodyElement = document.body;
-    if (bodyElement) {
-        bodyElement.style.marginBottom = '0px !important';
-    }
-};
+    document.addEventListener("keydown", function (e) {
+        // Disable F12 key
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+            e.preventDefault();
+        }
+    });
+
+    // Disable right-click context menu
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<script>
+    window.onload = function () {
+        var bodyElement = document.body;
+        if (bodyElement) {
+            bodyElement.style.marginBottom = "0px !important";
+        }
+    };
 </script>
