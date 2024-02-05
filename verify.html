@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Gary Ecleo" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Verify Cert</title>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            #gallery {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .photo {
+                position: relative;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                border: 1px solid #ccc;
+                margin: 5px;
+                cursor: pointer;
+            }
+
+            .photo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .verified-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                color: #ffffff;
+                background-color: #4caf50;
+                padding: 5px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!-- class name .header1 in css -->
+            <h1 class="header1">Gary's Coding Adventure</h1>
+        </header>
+        <!-- class name .section1 in css -->
+        <section class="section1">
+            <nav class="nav1">
+                <!-- before emoji  -->
+                <ul class="menu">
+                    <li>😎 <a href="index.html">About Me</a></li>
+                    <li>😍 <a href="family.html">Family</a></li>
+                    <li>😀 <a href="friends.html">Friends</a></li>
+                    <li>🤩 <a href="students.html">Students</a></li>
+                    <li>🤓 <a href="portfolio.html">Portfolio</a></li>
+                    <li>😊 <a href="verify.html">Verify</a></li>
+                </ul>
+            </nav>
+
+            <article class="article1">
+                <label for="searchInput">Search by ID:</label>
+                <input type="text" id="searchInput" oninput="searchPhotos()" />
+
+                <div class="clearfix">
+                    <div class="responsive">
+                        <div class="gallery">
+                            <!-- Place your photo elements here -->
+                            <div class="photo" data-id="20230120001">
+                                <img
+                                    src="certificate/WebBasicCert gary.png"
+                                    alt="WebBasicCert Gary Ecleo"
+                                />
+                                <div class="verified-text">VERIFIED</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <div class="photo" data-id="20230227001">
+                                <img
+                                    src="certificate/WebBasicCert lags.png"
+                                    alt="WebBasicCert Jonathan Lagbas"
+                                />
+                                <div class="verified-text">VERIFIED</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <div class="photo" data-id="20230227002">
+                                <img
+                                    src="certificate/WebBasicCert myks.png"
+                                    alt="WebBasicCert Mike Cruz"
+                                />
+                                <div class="verified-text">VERIFIED</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <div class="photo" data-id="20230227003">
+                                <img
+                                    src="certificate/WebBasicCert mors.png"
+                                    alt="WebBasicCert Euriel John Mora"
+                                />
+                                <div class="verified-text">VERIFIED</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <div class="photo" data-id="20240502001">
+                                <img
+                                    src="certificate/WebBasicCert tom.png"
+                                    alt="WebBasicCert Bae Junseo"
+                                />
+                                <div class="verified-text">VERIFIED</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <div class="photo" data-id="20240502002">
+                                <img
+                                    src="certificate/WebBasicCert min.png"
+                                    alt="WebBasicCert Gong Yumin"
+                                />
+                                <div class="verified-text">VERIFIED</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <div class="photo" data-id="20240502003">
+                                <img
+                                    src="certificate/WebBasicCert jun.png"
+                                    alt="WebBasicCert Gong Yujun"
+                                />
+                                <div class="verified-text">VERIFIED</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more photos as needed -->
+                </div>
+            </article>
+        </section>
+
+        <footer class="clearfix">
+            <!--this is your section -->
+            <div class="item-left">
+                <!--this is your nav -->
+                <p>Quick Links</p>
+                <ul>
+                    <li>
+                        😎
+                        <a href="index.html" style="color: #11ecdf">About Me</a>
+                    </li>
+                    <li>
+                        😍
+                        <a href="family.html" style="color: #11ecdf">Family</a>
+                    </li>
+                    <li>
+                        😀
+                        <a href="friends.html" style="color: #11ecdf"
+                            >Friends</a
+                        >
+                    </li>
+                    <li>
+                        🤩
+                        <a href="students.html" style="color: #11ecdf"
+                            >Students</a
+                        >
+                    </li>
+                    <li>
+                        🤓
+                        <a href="portfolio.html" style="color: #11ecdf"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li>
+                        😊
+                        <a href="verify.html" style="color: #11ecdf">Verify</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item-right">
+                <!--this is your article -->
+                <p>Contact</p>
+                <ul>
+                    <!-- Adress -->
+                    <li>
+                        📌
+                        <a href="#" style="color: #11ecdf"
+                            >Subic Bay Philippines</a
+                        >
+                    </li>
+                    <!-- my email -->
+                    <li>
+                        📧
+                        <a href="#" style="color: #11ecdf"
+                            >gary@keystonesubic.com</a
+                        >
+                    </li>
+                    <!-- phone number -->
+                    <li>
+                        &#x1F4DE;
+                        <a href="#" style="color: #11ecdf">0919-123-4567</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+        <script>
+            function searchPhotos() {
+                const searchInput = document
+                    .getElementById("searchInput")
+                    .value.toLowerCase();
+                const photos = document.querySelectorAll(".photo");
+
+                photos.forEach((photo) => {
+                    const photoId = photo.getAttribute("data-id").toLowerCase();
+                    const isVisible = photoId.includes(searchInput);
+                    const verifiedText = photo.querySelector(".verified-text");
+                    const photoImage = photo.querySelector("img");
+
+                    if (isVisible) {
+                        photo.style.display = "block";
+                        verifiedText.style.display = "block";
+                        // Set photo width to 100%, height to 100vh, and object-fit to contain when the correct ID is entered
+                        photo.style.width = "100%";
+                        photo.style.height = "100vh";
+                        photoImage.style.objectFit = "contain";
+                    } else {
+                        photo.style.display = "none";
+                        verifiedText.style.display = "none";
+                        // Reset photo width, height, and object-fit if the ID does not match
+                        photo.style.width = "150px"; // Adjust the default width as needed
+                        photo.style.height = "150px"; // Adjust the default height as needed
+                        photoImage.style.objectFit = "cover"; // Reset object-fit to cover if needed
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>
+
+<script>
+    document.addEventListener("keydown", function (e) {
+        // Disable F12 key
+        if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.keyCode === 73)) {
+            e.preventDefault();
+        }
+    });
+
+    // Disable right-click context menu
+    document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<script>
+    window.onload = function () {
+        var bodyElement = document.body;
+        if (bodyElement) {
+            bodyElement.style.marginBottom = "0px !important";
+        }
+    };
+</script>
