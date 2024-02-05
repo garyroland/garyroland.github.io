@@ -66,7 +66,7 @@
 
                 <div class="clearfix">
                     <div class="responsive">
-                        <div class="gallery">
+                        <div id="gallery">
                             <!-- Place your photo elements here -->
                             <div class="photo" data-id="20230120001">
                                 <img
@@ -79,7 +79,7 @@
                     </div>
 
                     <div class="responsive">
-                        <div class="gallery">
+                        <div id="gallery">
                             <div class="photo" data-id="20230227001">
                                 <img
                                     src="certificate/WebBasicCert lags.png"
@@ -91,7 +91,7 @@
                     </div>
 
                     <div class="responsive">
-                        <div class="gallery">
+                        <div id="gallery">
                             <div class="photo" data-id="20230227002">
                                 <img
                                     src="certificate/WebBasicCert myks.png"
@@ -103,7 +103,7 @@
                     </div>
 
                     <div class="responsive">
-                        <div class="gallery">
+                        <div id="gallery">
                             <div class="photo" data-id="20230227003">
                                 <img
                                     src="certificate/WebBasicCert mors.png"
@@ -115,7 +115,7 @@
                     </div>
 
                     <div class="responsive">
-                        <div class="gallery">
+                        <div id="gallery">
                             <div class="photo" data-id="20240205001">
                                 <img
                                     src="certificate/WebBasicCert tom.png"
@@ -127,7 +127,7 @@
                     </div>
 
                     <div class="responsive">
-                        <div class="gallery">
+                        <div id="gallery">
                             <div class="photo" data-id="20240205002">
                                 <img
                                     src="certificate/WebBasicCert min.png"
@@ -139,7 +139,7 @@
                     </div>
 
                     <div class="responsive">
-                        <div class="gallery">
+                        <div id="gallery">
                             <div class="photo" data-id="20240205003">
                                 <img
                                     src="certificate/WebBasicCert jun.png"
@@ -227,31 +227,49 @@
                     .getElementById("searchInput")
                     .value.toLowerCase();
                 const photos = document.querySelectorAll(".photo");
+                const responsiveContainers =
+                    document.querySelectorAll(".responsive");
 
                 photos.forEach((photo) => {
                     const photoId = photo.getAttribute("data-id").toLowerCase();
                     const isVisible = photoId.includes(searchInput);
                     const verifiedText = photo.querySelector(".verified-text");
                     const photoImage = photo.querySelector("img");
+                    const responsiveContainer = photo.closest(".responsive");
 
-                    if (isVisible) {
+                    if (searchInput === "") {
+                        // Reset styles for all photos and responsive containers when search input is empty
+                        responsiveContainers.forEach((container) => {
+                            container.style.width = "24%";
+                        });
                         photo.style.display = "block";
                         verifiedText.style.display = "block";
-                        // Set photo width to 100%, height to 100vh, and object-fit to contain when the correct ID is entered
-                        photo.style.width = "100%";
+                        photo.style.width = "auto";
+                        photo.style.height = "auto";
+                        photoImage.style.objectFit = "cover";
+                    } else if (isVisible) {
+                        photo.style.display = "block";
+                        verifiedText.style.display = "block";
+                        // Set only the visible photo's height to 100vh
                         photo.style.height = "100vh";
+                        // Set photo width to 100% and object-fit to contain when the correct ID is entered
+                        photo.style.width = "100%";
                         photoImage.style.objectFit = "contain";
+                        // Set width of the responsive container to 100%
+                        responsiveContainer.style.width = "100%";
                     } else {
                         photo.style.display = "none";
                         verifiedText.style.display = "none";
                         // Reset photo width, height, and object-fit if the ID does not match
-                        photo.style.width = "150px"; // Adjust the default width as needed
-                        photo.style.height = "150px"; // Adjust the default height as needed
+                        photo.style.width = "auto"; // Reset width to auto
+                        photo.style.height = "auto"; // Reset height to auto
                         photoImage.style.objectFit = "cover"; // Reset object-fit to cover if needed
                     }
                 });
             }
         </script>
+
+        <!-- ... Your existing code ... -->
     </body>
 </html>
 
